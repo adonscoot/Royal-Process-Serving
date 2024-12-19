@@ -109,7 +109,7 @@ def create_new_affidavit():
     time_served.delete(0, tk.END)
     date_served.set_date("")  # Reset the date entry
     paper_type.set("")  # Reset the paper type combobox
-    served_by.set("John Doe")  # Default served by value
+    served_by.set("Kevin Williams")  # Default served by value
     # Refresh the address dropdown to load the updated addresses
     saved_addresses = load_addresses()
     address['values'] = saved_addresses
@@ -189,7 +189,7 @@ paper_type = ttk.Combobox(tab_affidavit, font=large_font, values=["Summons", "Su
 paper_type.grid(row=5, column=1, sticky="ew", padx=10, pady=10)
 
 tk.Label(tab_affidavit, text="Served By:", font=large_font).grid(row=6, column=0, sticky="w", padx=10, pady=10)
-served_by = ttk.Combobox(tab_affidavit, font=large_font, values=["John Doe", "Jane Smith", "Bob Johnson"])
+served_by = ttk.Combobox(tab_affidavit, font=large_font, values=["Kevin Williams", "Aden Scott", "Jacob Bender"])
 served_by.grid(row=6, column=1, sticky="ew", padx=10, pady=10)
 
 # Button to save affidavit
